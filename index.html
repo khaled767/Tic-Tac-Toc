@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h1{
+        text-align: center;
+    }
+    .gameboard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 300px;
+        justify-content: center;
+    }
+    .square{
+        display: flex;
+        flex-wrap: wrap;
+        border: 5px solid rgb(199, 31, 31);
+        width: 25%;
+        height: 25%;
+        font-size: 72px;
+        align-items: center;
+        justify-content: center;
+        margin: 3px 3px;
+    }   
+    #controls, #message{
+        text-align: center;
+        margin: 20px 0 ;
+    }
+</style>
+</head>
+<body>
+    <h1>Tic Tac Toc</h1>
+    <div class="gameboard"></div>
+    <div class="controls">
+        <input type="text" id="player1" placeholder="Player 1 Name">
+        <input type="text" id="player2" placeholder="Player 2 Name">
+        <button type="submit" id="start-button">start Game</button>
+        <button type="reset" id="restart-button">restart Game</button>
+    </div>
+    <div id="message"></div>
+    <div id="result-display"></div>
+    <script src="main.js"></script>
+</body>
+</html>
